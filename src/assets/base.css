@@ -1,0 +1,125 @@
+:root {
+  /* === Белый и чёрный === */
+  --white: #ffffff;
+  --white-soft: #f8f8f8;
+  --white-mute: #f2f2f2;
+
+  --black: #181818;
+  --black-soft: #333333;
+  --black-mute: #444444;
+  --black-darkest: #101010;
+
+  /* === Цвета текста === */
+  --text-main: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #888888;
+  --text-invert: #181818;
+
+  /* === Цвета интерфейса === */
+  --primary: #3b83f6b0; /* синий кнопок */
+  --primary-transparent: #3b83f61c;
+  --primary-hover: #2563eb;
+  --accent: #ffcd4b; /* жёлтый акцент */
+  --danger: #ef4444; /* красный */
+  --success: #22c55e; /* зелёный */
+  --info: #6ec1e4; /* голубой */
+  --price-color: var(--text-invert);
+
+  /* === Фоны === */
+  --bg-main: var(--black);
+  --bg-soft-black: var(--black-soft);
+  --bg-soft-white: var(--white-soft);
+  --bg-muted: var(--black-mute);
+  --bg-muted-blue: var(--primary-transparent);
+  --bg-panel: #1e1e1e;
+
+  /* === Границы и разделители === */
+  --border-color: #444;
+  --border-hover: #666;
+  --border-radius: 8px;
+
+  /* === Общие стили === */
+  --transition: all 0.2s ease;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  /* === Прочее === */
+  --section-gap: 160px;
+
+  /* Размеры шрифта */
+  --font-xs: 0.75rem; /* 12px */
+  --font-sm: 0.875rem; /* 14px */
+  --font-md: 1rem; /* 16px */
+  --font-lg: 1.25rem; /* 20px */
+  --font-xl: 1.5rem;
+
+  /* Толщина шрифтов */
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  /* min-height: 100vh; */
+  color: var(--color-text);
+  background: var(--color-background-soft);
+  transition:
+    color 0.5s,
+    background-color 0.3s ease-in-out;
+  line-height: 1.6;
+  font-family: 'Nunito', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('@/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('@/assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  /* font-style: italic; */
+  font-weight: 100 900;
+  src: url('@/assets/fonts/Nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('@/assets/fonts/Nunito/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf')
+    format('truetype');
+}

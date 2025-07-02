@@ -4,7 +4,7 @@
         `base-button--${color}`,
         `base-button--${variant}`,
         { 'w-full': fullWidth }
-    ]" @click="$emit('click')">
+    ]">
         <slot />
     </button>
 </template>

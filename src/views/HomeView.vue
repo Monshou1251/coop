@@ -32,6 +32,11 @@
               </BaseButton>
 
             </div>
+            <div class="button">
+              <BaseButton variant="outline" @click="sendToBackend">
+                Отправить в базу
+              </BaseButton>
+            </div>
 
           </div>
         </template>
@@ -74,9 +79,12 @@ const store = useOrderStore()
 const isEditMode = computed(() => store.isEditMode)
 const editableData = computed(() => store.editableData ?? store.originalData)
 
+function sendToBackend() {
+  console.log('Заглушка: данные отправлены в базу', store.originalData)
+  alert('Данные успешно отправлены в базу (заглушка).')
+}
 
 function goToChat() {
-  // Например, переход по ссылке:
   window.open('/chat', '_blank')
 }
 
